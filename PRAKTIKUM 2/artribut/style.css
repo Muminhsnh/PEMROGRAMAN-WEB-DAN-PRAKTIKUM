@@ -1,0 +1,154 @@
+/* Pengaturan Umum Halaman */
+body {
+    font-family: 'Poppins', 'Segoe UI', Tahoma, sans-serif;
+    background-color: #fce4ec; /* Latar belakang pink muda yang lembut */
+    margin: 0;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Kartu Profil Utama (Atas) */
+.container {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 500px;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Judul 'this is me!' */
+.heading {
+    color: #d81b60;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+/* Foto Profil Jadi Bulat & Rapi */
+.profile-img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #f8bbd0;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Teks Katakata Maniez */
+p {
+    color: #555555;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+/* Kartu Konten (Bawah) */
+.content-section {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 500px;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    text-align: center;
+}
+
+.content-section h1 {
+    color: #8e24aa;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+/* Mengubah Link Menjadi Tombol */
+.content-section a {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #8e24aa;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 20px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.content-section a:hover {
+    background-color: #ab47bc;
+}
+  
+/* Penambahan Poin 1: Styling Tombol Instagram Berikon */
+.ig-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 22px;
+    background-color: #8e24aa;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 20px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.ig-btn:hover {
+    background-color: #ab47bc;
+    transform: translateY(-2px);
+}
+
+/* Penambahan Poin 3: Styling Bio / Quote Singkat */
+.bio-quote {
+    font-style: italic;
+    color: #666666;
+    font-size: 13.5px;
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #fff5f8;
+    border-left: 3px solid #d81b60;
+    border-radius: 4px;
+} 
+
+/* Styling Tombol Navigasi 'Tentang Aku' */
+.nav-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin: 5px;
+    padding: 10px 22px;
+    background-color: #d81b60;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 20px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.nav-btn:hover {
+    background-color: #ad1457;
+    transform: translateY(-2px);
+}
+
+/* Styling Kotak Informasi Riwayat & Organisasi */
+.info-card {
+    background-color: #fff5f8;
+    border-left: 4px solid #d81b60;
+    padding: 12px 15px;
+    margin: 10px 0;
+    border-radius: 6px;
+    text-align: left;
+}
+
+.info-card p {
+    margin: 3px 0;
+    font-size: 14px;
+}
+
+.intro-text {
+    font-size: 14px;
+    color: #666666;
+    margin-top: 10px;
+    padding: 0 10px;
+    line-height: 1.5;
+}
