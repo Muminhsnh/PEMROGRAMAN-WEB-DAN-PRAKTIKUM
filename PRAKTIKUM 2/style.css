@@ -1,7 +1,6 @@
-/* Pengaturan Umum Halaman */
 body {
     font-family: 'Poppins', 'Segoe UI', Tahoma, sans-serif;
-    background-color: #fce4ec; /* Latar belakang pink muda yang lembut */
+    background-color: #fce4ec; 
     margin: 0;
     padding: 30px 20px;
     display: flex;
@@ -9,7 +8,6 @@ body {
     align-items: center;
 }
 
-/* Kartu Profil Utama (Atas) */
 .container {
     background-color: #ffffff;
     width: 100%;
@@ -21,31 +19,28 @@ body {
     margin-bottom: 20px;
 }
 
-/* Judul 'this is me!' */
 .heading {
     color: #d81b60;
     font-size: 28px;
     margin-bottom: 15px;
 }
 
-/* Foto Profil Jadi Bulat & Rapi */
 .profile-img {
-    width: 160px;
-    height: 160px;
+    width: 150px;
+    height: 150px;
     object-fit: cover;
+    object-position: top; /* <--- Tambahkan baris ini agar fokus gambar bergeser ke atas (ujung kepala kelihatan) */
     border-radius: 50%;
     border: 4px solid #f8bbd0;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
-/* Teks Katakata Maniez */
 p {
     color: #555555;
     font-size: 15px;
     line-height: 1.6;
 }
 
-/* Kartu Konten (Bawah) */
 .content-section {
     background-color: #ffffff;
     width: 100%;
@@ -62,7 +57,6 @@ p {
     margin-bottom: 10px;
 }
 
-/* Mengubah Link Menjadi Tombol */
 .content-section a {
     display: inline-block;
     margin-top: 15px;
@@ -78,8 +72,7 @@ p {
 .content-section a:hover {
     background-color: #ab47bc;
 }
-  
-/* Penambahan Poin 1: Styling Tombol Instagram Berikon */
+
 .ig-btn {
     display: inline-flex;
     align-items: center;
@@ -98,7 +91,6 @@ p {
     transform: translateY(-2px);
 }
 
-/* Penambahan Poin 3: Styling Bio / Quote Singkat */
 .bio-quote {
     font-style: italic;
     color: #666666;
@@ -110,7 +102,6 @@ p {
     border-radius: 4px;
 } 
 
-/* Styling Tombol Navigasi 'Tentang Aku' */
 .nav-btn {
     display: inline-flex;
     align-items: center;
@@ -130,7 +121,6 @@ p {
     transform: translateY(-2px);
 }
 
-/* Styling Kotak Informasi Riwayat & Organisasi */
 .info-card {
     background-color: #fff5f8;
     border-left: 4px solid #d81b60;
@@ -151,4 +141,19 @@ p {
     margin-top: 10px;
     padding: 0 10px;
     line-height: 1.5;
+} 
+
+/* Styling Kotak Informasi Pendidikan & Organisasi */
+.info-card {
+    background-color: #fff5f8;
+    border-left: 4px solid #d81b60;
+    padding: 12px 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    text-align: left;
+}
+
+.info-card p {
+    margin: 3px 0;
+    font-size: 14px;
 }
