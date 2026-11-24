@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program Pendataan</title>
+</head>
+<body>
+    <h1>Pendataan Kelas</h1>
+    <p>Masukkan nama dan NIM mahasiswa, lalu tekan tombol Tambah.</p>
+
+    <form onsubmit="tambahData(event)">
+        <label for="input-nama">Nama:</label>
+        <input type="text" id="input-nama" placeholder="Masukkan nama" oninput="validasiNama(this)" required>
+        <label for="input-nim">NIM:</label>
+        <input type="text" id="input-nim" placeholder="Masukkan NIM" inputmode="numeric" pattern="[0-9]+" oninput="validasiNim(this)" required>
+        <button type="submit">Tambah</button>
+    </form>
+
+    <h2>Data yang tersimpan</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>No.</th>
+                <th>Nama</th>
+                <th>NIM</th>
+                <th>Aksi</th>
+            </tr>
+        </thead>
+        <tbody id="daftar-data"></tbody>
+    </table>
+    <p id="jumlah-data">Jumlah mahasiswa: 0</p>
+
+    <script src="main.js"></script>
+</body>
+</html>
